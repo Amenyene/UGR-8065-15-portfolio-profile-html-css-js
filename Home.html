@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
    
     <div class="hero">
         <div>              
-            <nav>               
-                <ul>                  
-                    <li><a href="#" >Home</a></li>
-                    <li><a href="about.html" >About me</a></li>
-                    <li><a href="blog.html" >Blog</a></li>
-                    <li><a href="port.html" >portifolio</a></li>
-                    <li><a href="contact.html" >contact me</a></li>
+            <nav> 
+                           
+                <ul class="nav-menu" id="nav-menu">                  
+                    <li class="nav-item"><a class="active" href="Home.html " class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="port.html" class="nav-link">portifolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">contact me</a></li> 
                 </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span  class="bar"></span>
+                    <span  class="bar"></span>
+                    
+                </div>
             </nav>
+            
         </div> 
         <div class="detail">
             <h1>I,m <span>Yodit Debebe</span></h1>
@@ -26,12 +34,15 @@
         </div>
         <div class="image">
         <img src="images/img2.jpg" alt="My photo"> <br>
-        <a href="about.html">About me</a>
-        </div>
+        <button type="button" onclick="location.href='about.html'">About Me</button>
+                </div>
        
     </div>
+    <div>
     <footer>
         <p>&copy; 2024 Yodit Debebe. All rights reserved.</p>
     </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
