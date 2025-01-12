@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <link rel="stylesheet" href="Styles.css">
+
 </head>
 <body>
-   
-    <div class="container">
-        <header>
+    <div class="hero">
+        <div> 
+            <header>             
+            <nav> 
+                           
+                <ul class="nav-menu" id="nav-menu">                  
+                    <li class="nav-item"><a href="Home.html " class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="port.html" class="nav-link">portifolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">contact me</a></li> 
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span  class="bar"></span>
+                    <span  class="bar"></span>
+                    
+                </div>
+            </nav>
+        </header> 
+        </div>  
             <h1>Contact Me</h1>
-        </header>
-        <section class="info">
-          <h2>Get in touch with me</h2>
-            <p>If you have any questions or would like to reach out, please fill out the form below. I look forward to hearing from you!</p>
+       
+        <section id="form" class="container1">
+           
+        <section class="first">
+            
+            <h2>Get in touch with me</h2>
+            <p>If you have any questions or would like to reach out, please fill out the form. I look forward to hearing from you!</p>
         </section>
-        <section class="form-container">
-                <h3>contact me here</h3>
+        <section class="first">
+               
+                <div class="container2">
+                    <h3>contact me here</h3>
                 <form>
-                    <div class="form-group">
+                    <div class="art">
+                    <div class="adv form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="form-group">
+                    <div class="adv form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
+                    </div>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
@@ -38,15 +65,15 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button id="sub" type="submit">Send Message</button>
                 </form>            
         </section>
        
     </div>
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Yodit Debebe. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-
 

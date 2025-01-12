@@ -4,57 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="Styles.css">
+
 </head>
 <body>
-    
-    <header>
+    <div class="hero">
+        <div> 
+            <header>             
+            <nav> 
+                           
+                <ul class="nav-menu" id="nav-menu">                  
+                    <li class="nav-item"><a href="Home.html " class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a class="active" href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="port.html" class="nav-link">portifolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">contact me</a></li> 
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span  class="bar"></span>
+                    <span  class="bar"></span>
+                    
+                </div>
+            </nav>
+        </header>
+        </div> 
+   
         <div class="container">
             <h1>My Blog</h1>
-            <p>Welcome to my blog where I share my hobbies, interests, and adventures!</p>
+            <p id="blog">Welcome to my blog where I share my hobbies, interests, and adventures!</p>
         </div>
-    </header>
+    
 
-    <main class="container">
-        <section>
-            <h2>Hobbies and Interests</h2>
-            <article class="art">
+    <main class="container1">
+        <section class="first">
+           
+            <div class="art">
+                <div class="adv">
+                    <h2>Hobbies and Interests</h2>
                 <h3>cooking</h3>
                
                 <p>I have a passion for cooking. Experimenting in the kitchen is a creative outlet for me.
                      I enjoy trying new recipes and exploring different cuisines. 
                      Cooking allows me to express my creativity, and I find it incredibly satisfying to share my culinary creations with friends and family.</p>
                
-                <img src="images/img5.jpg" alt="Gardening">
-            </article>
-
-            <article class="art">
+                <img src="images/img5.jpg" alt="Gardening" width="200">
+                </div>
+            
+                <div class="adv">
                 <h3>Spiritual song</h3>
                 
                 <p>Spiritual songs hold a special place in my heart. They provide a sense of peace and connection, often uplifting my spirit and helping me reflect on my life. I find comfort in the melodies and lyrics, which often convey messages of hope, love, and inner strength. Listening to these songs can transform my mood and inspire me during challenging times..</p>
                 <audio controls>
                     <source src="audio/audio.mp3" type="audio/mpeg"></audio>
                     
-            </article>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section  class="first">
             <h2>Adventures</h2>
-            <article class="art">
-                <h3>Adventure in the Wenchi</h3>
+            
+         <h3>Adventure in the Wenchi</h3>
                 
                 <p>Date: May 21, 2024</p>
-                <p>Six month ago, I embarked on an amazing adventure in the Wenchi. The scenery was breathtaking, and I had the chance to explore new hiking trails and enjoy the fresh air. Let me share some highlights from the trip...</p>
-                <img src="images/img6.jpg" alt="Wenchi">
-                <video controls>
-                    <source src="video/video.mp4" type="video/mp4">
-                    
-                </video>
-            </article>   
-            
+                <p>Six month ago, I embarked on an amazing adventure in the Wenchi. 
+                    The scenery was breathtaking, and I had the chance to explore new hiking trails and enjoy the fresh air.
+                     Let me share some highlights from the trip...</p>
+                     
+                <div class="art">
+                    <div class="adv">
+                    <img src="images/img6.jpg" alt="Wenchi" width="200">
+                    </div>
+                    <div class="adv">
+                    <video class="video" controls>
+                    <source  src="video/video.mp4" type="video/mp4" > </video>
+                    </div>
+                 </div>   
+        </section>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Yodit Debebe. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
